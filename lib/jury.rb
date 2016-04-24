@@ -30,19 +30,19 @@ class Jury
 		self.members.each do |jury_member|
 			voted_finalist = finalists.sample.name 
 			@@votes[voted_finalist.to_sym]  += 1
-			puts "#{jury_member} has voted for #{voted_finalist}"#.yellow
+			puts "#{jury_member} has voted for #{voted_finalist}".yellow
 		end
 	end
 
 	def report_votes(final_votes)
 		final_votes.each do |key, value|
-			puts "#{key} has #{value} votes"#.red
+			puts "#{key} has #{value} votes".red
 		end
 	end
 
 	def announce_winner(final_votes)
 		winner = final_votes.max_by {|k, v| v}[0]
-		puts "The last survivor is #{winner} !"#.green
+		puts "The last survivor is #{winner} !".green
 		winner
 	end
 
