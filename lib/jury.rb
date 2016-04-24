@@ -14,7 +14,7 @@ class Jury
 
  def cast_votes(members)
    initialize_votes(members)
-  #vote_randomly(members)
+  vote_randomly(members)
    @@votes
 
  end
@@ -25,6 +25,7 @@ class Jury
 			@@votes[member.name.to_sym] = 0
 		end
 	end
+
    def vote_randomly(finalists)
 		self.members.each do |jury_member|
 			voted_finalist = finalists.sample.name 

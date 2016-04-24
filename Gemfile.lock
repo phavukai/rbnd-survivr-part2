@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/phavukai/colorizr
+  remote: https://github.com/phavukai/colorizr.git
   revision: 43ff61f575f5e55ed7a14566358b6f84c14e2a39
   specs:
     colorizr (0.0.2)
